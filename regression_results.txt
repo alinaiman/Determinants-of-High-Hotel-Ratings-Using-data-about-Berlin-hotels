@@ -1,0 +1,63 @@
+=== LPM ===
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           highly_rated   R-squared:                       0.188
+Model:                            OLS   Adj. R-squared:                  0.185
+Method:                 Least Squares   F-statistic:                     85.56
+Date:                Tue, 16 Dec 2025   Prob (F-statistic):           4.02e-33
+Time:                        17:12:59   Log-Likelihood:                -343.01
+No. Observations:                 559   AIC:                             692.0
+Df Residuals:                     556   BIC:                             705.0
+Df Model:                           2                                         
+Covariance Type:                  HC3                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.2995      0.088     -3.394      0.001      -0.472      -0.127
+distance      -0.0063      0.011     -0.591      0.555      -0.027       0.015
+stars          0.2679      0.021     12.563      0.000       0.226       0.310
+==============================================================================
+Omnibus:                     1144.573   Durbin-Watson:                   1.728
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               40.510
+Skew:                          -0.036   Prob(JB):                     1.60e-09
+Kurtosis:                       1.683   Cond. No.                         22.3
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+=== LOGIT ===
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:           highly_rated   No. Observations:                  559
+Model:                          Logit   Df Residuals:                      556
+Method:                           MLE   Df Model:                            2
+Date:                Tue, 16 Dec 2025   Pseudo R-squ.:                  0.1526
+Time:                        17:12:59   Log-Likelihood:                -324.50
+converged:                       True   LL-Null:                       -382.95
+Covariance Type:            nonrobust   LLR p-value:                 4.152e-26
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -4.0257      0.501     -8.032      0.000      -5.008      -3.043
+distance      -0.0361      0.044     -0.831      0.406      -0.121       0.049
+stars          1.3557      0.147      9.203      0.000       1.067       1.644
+==============================================================================
+
+=== PROBIT ===
+                          Probit Regression Results                           
+==============================================================================
+Dep. Variable:           highly_rated   No. Observations:                  559
+Model:                         Probit   Df Residuals:                      556
+Method:                           MLE   Df Model:                            2
+Date:                Tue, 16 Dec 2025   Pseudo R-squ.:                  0.1532
+Time:                        17:12:59   Log-Likelihood:                -324.30
+converged:                       True   LL-Null:                       -382.95
+Covariance Type:            nonrobust   LLR p-value:                 3.377e-26
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -2.3957      0.283     -8.479      0.000      -2.949      -1.842
+distance      -0.0235      0.026     -0.910      0.363      -0.074       0.027
+stars          0.8128      0.082      9.858      0.000       0.651       0.974
+==============================================================================
